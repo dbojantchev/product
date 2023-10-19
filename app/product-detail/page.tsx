@@ -10,7 +10,7 @@ export default function Page() {
     const [name, setName] = useState("");
     const [description, setDescription] = useState("");
     const [type, setType] = useState("");
-    const [price, setPrice] = useState(0);
+    const [price, setPrice] = useState<number>(0);
     const [color, setColor] = useState("");
     const [errors, setErrors] = useState<string[]>([]);
 
@@ -23,8 +23,8 @@ export default function Page() {
         setDescription(searchParams.get('description') || '');
         setColor(searchParams.get('color') || '');
         setType(searchParams.get('type') || '');
-        const price = searchParams.get('price');
-        setPrice(price ? parseFloat(price) : 0);
+        const priceStr = searchParams.get('price');
+        setPrice(priceStr ? parseFloat(priceStr) : 0);
 
     }, [sku, searchParams]);
 
@@ -47,7 +47,7 @@ export default function Page() {
         }
 
         if(price === 0 || price > 2500) {
-            newErrors.push('Price is limited to between $0 and $2500');
+            newErrors.push('Price is required and limited to between $0 and $2500');
         }
 
         if(newErrors.length > 0) {
@@ -128,7 +128,7 @@ export default function Page() {
                         step={"0.01"}
                         max={"2500"}
                         value={price}
-                        onChange={(e) => setPrice(e.target.value)}
+                        onChange={(e) => setPrice(e.target.value === '' ? 0 : parseFloat(e.target.value))}
                         />
                 </div>
 
