@@ -1,0 +1,52 @@
+.main-content {
+    padding: 0 2rem 2rem 2rem;
+    width: 100%;
+}
+
+.product-list-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 1rem 0 1rem 0;
+    color: #2345Fa;
+}
+
+.product-detail-form {
+    padding: 1rem;
+    width: 600px;
+}
+
+.product-detail-field {
+    display: flex;
+    padding: 20px;
+}
+
+.product-detail-field-label {
+    width: 120px;
+}
+
+.product-detail-field-input {
+    width: 400px;
+}
+
+.product-detail-action {
+    text-align: center;
+}
+
+.product-save-button {
+    margin-top: 30px;
+    background-color: #23a3fa;
+    padding: 5px 10px;
+}
+
+.back-prod-list {
+    margin-top: 20px;
+    color: #2345Fa;
+}
+
+.errors-area {
+    margin: 0 20px;
+}
+
+.error {
+    color: red;
+}

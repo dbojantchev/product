@@ -1,0 +1,59 @@
+.main-content {
+    padding: 0 2rem 2rem 2rem;
+}
+
+.filter-row {
+    padding: 1rem 0;
+    display: flex;
+    background-color: #aaa;
+}
+
+.color-option {
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+
+.color-option-selected {
+    border: 2px solid #2345Fa;
+    border-radius: 8px
+}
+
+.filter-row-title {
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.filter-row-options {
+}
+
+.product-list-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 1rem 0 1rem 0;
+    color: #2345Fa;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.price-col {
+    text-align: right;
+    width: 70px;
+}
+
+.edit-col {
+    font-size: 24px;
+    text-align: center;
+}
+
+th {
+    text-align: left;
+}
+
+td, th {
+    border: 1px solid #2345Fa;
+    padding: 5px;
+}
